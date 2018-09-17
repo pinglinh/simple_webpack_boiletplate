@@ -35,5 +35,8 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    open: true
+  },
   plugins: [htmlWebpackPlugin]
 };

@@ -4,7 +4,7 @@
   "description": "A ready to use simple webpack boilerplate",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
   "author": "pinglinh",
