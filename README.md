@@ -14,4 +14,5 @@
 
 ### Donate
 Buying me a donut will help fund my future projects.
+
 <a href="https://www.buymeacoffee.com/2NxBfdY" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Donut" style="height: auto !important;width: auto !important;" ></a>
