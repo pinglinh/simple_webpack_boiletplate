@@ -4,12 +4,3 @@ dist/
 
 # Dependency directories
 node_modules/
-
-# Enviroment varibles
-.env
-
-### Visual Studio Code ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/extensions.json
