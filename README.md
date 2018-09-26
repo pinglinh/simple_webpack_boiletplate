@@ -13,6 +13,6 @@
 2. `npm start`
 
 ### Donate
-Buying me a donut will help fund my future projects.
+Maintaining open-source takes hard work and time, help me out by donating a small amount to me. 
 
-<a href="https://www.buymeacoffee.com/2NxBfdY" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Donut" style="height: auto !important;width: auto !important;" ></a>
+<a href="https://www.buymeacoffee.com/nathfreder" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
