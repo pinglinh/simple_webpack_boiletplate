@@ -7,7 +7,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "format": "prettier --write **/*"
   },
   "dependencies": {
     "react": "^16.2.0",
