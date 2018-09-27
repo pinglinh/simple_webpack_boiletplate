@@ -42,7 +42,7 @@ module.exports = {
       template: './public/index.html',
       filename: './index.html',
     }),
-    new workboxPlugin.GenerateSW({
+    new WorkboxWebPackPlugin.GenerateSW({
       swDest: 'serviceWorker.js',
       clientsClaim: true,
       skipWaiting: true,
