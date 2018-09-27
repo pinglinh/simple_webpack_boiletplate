@@ -1,15 +1,12 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-
-const htmlWebpackPlugin = new HtmlWebPackPlugin({
-  template: './public/index.html',
-  filename: './index.html',
-});
+const WorkboxWebPackPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -30,16 +27,25 @@ module.exports = {
             loader: 'css-loader',
           },
           {
-            loader: 'sass-loader'
-          }
+            loader: 'sass-loader',
+          },
         ],
       },
     ],
   },
-  devtool: 'inline-source-map',
   devServer: {
     open: true,
     historyApiFallback: true,
   },
-  plugins: [htmlWebpackPlugin],
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+      filename: './index.html',
+    }),
+    new workboxPlugin.GenerateSW({
+      swDest: 'serviceWorker.js',
+      clientsClaim: true,
+      skipWaiting: true,
+    }),
+  ],
 };
