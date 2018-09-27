@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
@@ -6,6 +7,10 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+  output: {
+    path: path.join(__dirname, 'build'),
+    filename: 'bundle.js'
+  },
   module: {
     rules: [
       {
