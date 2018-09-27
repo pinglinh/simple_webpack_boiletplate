@@ -1,7 +1,7 @@
 {
   "name": "simple-react-boilerplate",
   "version": "1.0.0",
-  "description": "A simple boilerplate.",
+  "description": "A ready-to-use boilerplate for React.",
   "license": "MIT",
   "author": "Nathaniel Fredericks <me@nathfreder.tech> (https://nathfreder.tech)",
   "main": "src/index.js",
