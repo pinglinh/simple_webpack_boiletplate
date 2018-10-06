@@ -1,8 +1,39 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-const Index = () => {
-  return <div>Hello React!</div>;
-};
+import Home from './containers/Home';
+import About from './containers/About';
+import Footer from './layouts/Footer'
+import './index.scss';
+const App = () => (
+  <Router>
+    <>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+      <Footer/>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+      <Footer/>
+    </>
+  </Router>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
+      console.log('Service worker has been successfully registed.', registration);
+    }).catch(error => {
+      console.error('Service worker has not been successfully registered. ', error);
+    });
+  });
+}

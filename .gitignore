@@ -1,2 +1,6 @@
-/node_modules/
-/dist
+### Node ###
+# Webpack
+build/
+
+# Dependency directories
+node_modules/
